@@ -1,0 +1,143 @@
+/* Google Font */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(keralabg.png) no-repeat  ;
+  background-size: cover;
+  background-position: center;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  margin: auto;
+}
+
+.hero-content h1 {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.section-title {
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.text{
+  color:rgb(187, 23, 23);
+  font-size: 32px;
+}
+.place-card {
+  height: 200px;
+  border-radius: 18px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  transition: 0.4s ease;
+  overflow: hidden;
+}
+
+/* Dark Overlay for Readable Text */
+.place-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 0, 0, 0.45);
+  border-radius: 18px;
+}
+
+/* Text Above Overlay */
+.place-card h4,
+.place-card p {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hover Effect */
+.place-card:hover {
+  transform: scale(1.08);
+}
+.munnar {
+  background: url(munnar.jpg ) no-repeat;
+  
+}
+.alleppey{
+   background: url(allapuza\,\ kerala.jpg) no-repeat;
+   
+}
+.wayanad{
+   background: url(wayanad.jpg) no-repeat center;
+}
+.kovalam{
+   background: url(Kovalam\ beach.jpg) no-repeat;
+}
+/* BOOKING FORM */
+.booking-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.booking-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background: gold;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking-form button:hover {
+  background: orange;
+  transform: scale(1.05);
+}
+.section-title {
+  color: white;
+}
+/* FOOTER */
+.footer {
+  background: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 40px;
+}

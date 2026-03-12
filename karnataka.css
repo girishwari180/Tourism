@@ -1,0 +1,128 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(bg\ Karnataka.jpg) no-repeat center/cover;
+}
+
+.ka-hero {
+  height: 300px;
+}
+
+.ka-overlay {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ka-hero h1 {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.ka-title {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  color: #f2f4f7;
+}
+
+.ka-subtitle {
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(14, 14, 2);
+  font-size: 28px;
+}
+
+.ka-card {
+  height: 260px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.ka-card:hover {
+  transform: scale(1.07);
+}
+
+.ka-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+}
+
+.mysuru { background-image: url("mysuru.jpeg"); }
+.coorg { background-image: url("Coorg\ –\ The\ Scotland\ of\ India\ !.jpg"); }
+.hampi { background-image: url("Hampi.jpg"); }
+.gokarna { background-image: url("Gokarna\ Karnataka.jpg"); }
+.bengaluru { background-image: url("bengalore.jpg"); }
+.chikmagalur { background-image: url("Chikmagalur.jpg"); }
+
+.ka-experience {
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.timeline {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.step {
+  padding: 15px;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.15);
+  font-weight: bold;
+}
+
+
+.ka-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ka-form input,
+.ka-form select {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid gray;
+}
+
+.ka-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #003366;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ka-form button:hover {
+  background: black;
+  transform: scale(1.05);
+}
+
+.ka-footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

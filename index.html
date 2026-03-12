@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SouthScape</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+     <nav class="navbar">
+     <div class="logo">
+       <img src="SouthScape travel logo.png" alt="Logo">
+     </div>
+      <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="adventures.html">Adventures</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+    </ul>
+    </nav>
+    <header class="hero">
+        <div class="hero-text">
+            <h1>
+                Explore <br>
+                <span>South India & Goa</span>
+            </h1>
+             <p>
+                 Discover the beauty of South India and the charm of Goa with us!
+             </p>
+        <div class="search-bar">
+            <input type="search" id="searchInput" placeholder="Search destination">
+            <select id="stateSelect">
+          <option>Select State</option>
+          <option>Kerala</option>
+          <option>Tamil Nadu</option>
+          <option>Karnataka</option>
+          <option>Andhra Pradesh</option>
+          <option>Telangana</option>
+          <option>Goa</option>
+        </select>
+        
+        <select id="categorySelect">
+          <option>Select Category</option>
+          <option>Beaches</option>
+          <option>Hill Stations</option>
+          <option>Temples</option>
+          <option>Waterfalls</option>
+        </select>
+        
+
+        <button onclick="searchPlace()">Search</button>
+        </div>
+        </div>
+    </header>
+    <section class="destinations container my-5 text-center">
+
+  <h2 class="fw-bold">Top Destinations in South India</h2>
+  <p class="text-muted">Explore the best places to visit in South India & Goa</p>
+
+
+  <div id="destinationsCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+
+    
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#destinationsCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#destinationsCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#destinationsCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#destinationsCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#destinationsCarousel" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#destinationsCarousel" data-bs-slide-to="5"></button>
+    </div>
+
+
+    <div class="carousel-inner rounded-4 shadow">
+
+      <!-- Slide 1 Kerala -->
+      <div class="carousel-item active">
+        <img src="kerala.png" class="d-block w-100" alt="Kerala">
+
+        <div class="carousel-caption">
+          <h3>Kerala</h3>
+          <p>Backwaters & Hills</p>
+          <a href="kerala.html" class="btn btn-warning rounded-pill px-4">
+            Visit
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 2 Tamil Nadu -->
+      <div class="carousel-item">
+        <img src="TamilNadu.png" class="d-block w-100" alt="Tamil Nadu">
+
+        <div class="carousel-caption">
+          <h3>Tamil Nadu</h3>
+          <p>Temples & Culture</p>
+          <a href="tamilnadu.html" class="btn btn-warning rounded-pill px-4">
+            Visit
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 3 Karnataka -->
+      <div class="carousel-item">
+        <img src="karnataka.png" class="d-block w-100" alt="Karnataka">
+
+        <div class="carousel-caption">
+          <h3>Karnataka</h3>
+          <p>Heritage & Landscapes</p>
+          <a href="karnataka.html" class="btn btn-warning rounded-pill px-4">
+            Visit
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 4 Goa -->
+      <div class="carousel-item">
+        <img src="goa1.png" class="d-block w-100" alt="Goa">
+
+        <div class="carousel-caption">
+          <h3>Goa</h3>
+          <p>Beaches & Nightlife</p>
+          <a href="goa.html" class="btn btn-warning rounded-pill px-4">
+            Visit
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 5 Telangana -->
+      <div class="carousel-item">
+        <img src="telangana.png" class="d-block w-100" alt="Telangana">
+
+        <div class="carousel-caption">
+          <h3>Telangana</h3>
+          <p>Historic Forts & Famous Biryani</p>
+          <a href="telangana.html" class="btn btn-warning rounded-pill px-4">
+            Visit
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 6 Andhra Pradesh -->
+      <div class="carousel-item">
+        <img src="Andhra Pradesh.png" class="d-block w-100" alt="Andhra Pradesh">
+
+        <div class="carousel-caption">
+          <h3>Andhra Pradesh</h3>
+          <p>Spiritual Trails & Heritage Temples</p>
+          <a href="andhrapradesh.html" class="btn btn-warning rounded-pill px-4">
+            Visit
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#destinationsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#destinationsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+</section>
+   
+  <section class="experience">
+    <h2><i>Experience the Magic of South India</i></h2>
+    <p>
+      From serene beaches and lush hills to temples and vibrant cities.
+    </p>
+
+    <div class="exp-cards">
+      <div class="exp-card beach">Beaches & Islands</div>
+      <div class="exp-card hills">Hill Stations</div>
+      <div class="exp-card temples">Historic Temples</div>
+      <div class="exp-card waterfalls">Waterfalls & Nature</div>
+    </div>
+
+    
+  </section>
+ <script>
+function searchPlace()
+{
+    try
+    {
+        var search = document.getElementById("searchInput").value.trim();
+        var state = document.getElementById("stateSelect").value;
+        var category = document.getElementById("categorySelect").value;
+
+        var count = 0;
+
+        if(search != "")
+        {
+            count++;
+        }
+
+        if(state != "Select State")
+        {
+            count++;
+        }
+
+        if(category != "Select Category")
+        {
+            count++;
+        }
+
+        if(count == 0)
+        {
+            alert("Please select one search option");
+            return;
+        }
+
+        if(count > 1)
+        {
+            alert("Please use only one search option");
+            return;
+        }
+
+        // SEARCH BY TEXT
+        if(search == "Kerala" || search =="kerala")
+        {
+            window.location.href = "kerala.html";
+        }
+        else if(search == "Tamil Nadu" || search =="tamil nadu")
+        {
+            window.location.href = "tamilnadu.html";
+        }
+        else if(search == "Karnataka" || search =="karnataka")
+        {
+            window.location.href = "karnataka.html";
+        }
+        else if(search == "Goa"|| search=="goa")
+        {
+            window.location.href = "goa.html";
+        }
+        else if(search == "Telangana" || search =="telangana")
+        {
+            window.location.href = "telangana.html";
+        }
+        else if(search == "Andhra Pradesh" || search =="andhra pradesh")
+        {
+            window.location.href = "andhrapradesh.html";
+        }
+
+        // SEARCH BY STATE
+        else if(state == "Kerala")
+        {
+            window.location.href = "kerala.html";
+        }
+        else if(state == "Tamil Nadu")
+        {
+            window.location.href = "tamilnadu.html";
+        }
+        else if(state == "Karnataka")
+        {
+            window.location.href = "karnataka.html";
+        }
+        else if(state == "Goa")
+        {
+            window.location.href = "goa.html";
+        }
+        else if(state == "Telangana")
+        {
+            window.location.href = "telangana.html";
+        }
+        else if(state == "Andhra Pradesh")
+        {
+            window.location.href = "andhrapradesh.html";
+        }
+
+        // CATEGORY (NO PAGE)
+        else if(category != "Select Category")
+        {
+            alert("No page found for this category");
+        }
+
+        else
+        {
+            alert("Destination not found");
+        }
+    }
+    catch(error)
+    {
+        alert("Error in searching");
+    }
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+

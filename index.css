@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("download.jpg")  no-repeat center/cover;
+}
+.logo img {
+  height: 80px;        
+  width: 220px;        
+  object-fit: cover;   
+  border-radius: 50%;  
+}
+.navbar {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 60px;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(248, 251, 247);
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.hero {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-text {
+  color: #170108;
+
+}
+
+.hero-text h1 {
+  font-size: 90px;
+}
+
+.hero-text span {
+  color: rgb(118, 104, 25);
+}
+.hero-text p{
+  font-size: 30px;
+}
+.search-bar {
+  margin-top: 45px;
+  background: white;
+  padding: 12px;
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.search-bar input,
+.search-bar select {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 25px;
+}
+.search-bar button {
+  background: gold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.destination-card {
+  padding: 30px;
+  border-radius: 20px;
+  background: white;
+  transition: 0.3s;
+}
+
+.destination-card:hover {
+  transform: scale(1.05);
+}
+.destinations {
+  text-align: center;
+  padding: 70px 40px;
+}
+.fw-bold{
+   font-size: 50px;
+   font-weight: bold;
+   font-style: italic;
+}
+.text-muted{
+  font-size: 30px;
+  color:darkgreen;
+}
+  .carousel-item img {
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.carousel-caption {
+  /*background: rgba(0, 0, 0, 0.6);*/
+  padding: 20px;
+  border-radius: 15px;
+}
+.experience {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.experience h2 {
+  font-size: 46px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.experience p {
+  color: gray;
+  font-size: 38px;
+}
+
+.exp-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.exp-card {
+  width: 350px;
+  height: 380px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+
+
+.exp-card span {
+  position: relative;
+  z-index: 2;
+}
+
+.exp-card:hover {
+  transform: translateY(-10px);
+}
+
+.exp-card:hover::before {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.beach {
+  background:url(beautiful\ beach.jpg)
+}
+
+.hills {
+ background:url(hill\ stations.jpg)
+}
+
+.temples {
+  background:url(temple.jpg)
+}
+
+.waterfalls {
+  background:url(Water\ Falls.jpg)
+}
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 40px;
+  }
+
+  .nav-links li a {
+    font-size: 35px;
+  }
+
+  .hero-text h1 {
+    font-size: 70px;
+  }
+
+  .hero-text p {
+    font-size: 24px;
+  }
+
+  .search-bar input,
+  .search-bar select {
+    font-size: 20px;
+  }
+
+  .fw-bold {
+    font-size: 40px;
+  }
+
+  .text-muted {
+    font-size: 25px;
+  }
+
+  .experience h2 {
+    font-size: 36px;
+  }
+
+  .experience p {
+    font-size: 28px;
+  }
+
+  .exp-card {
+    width: 300px;
+    height: 350px;
+  }
+
+  .carousel-item img {
+    height: 400px;
+  }
+}
+
+
