@@ -1,0 +1,185 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #050505;
+  color: white;
+}
+.navbar {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 60px;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color:rgb(31, 54, 54);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(248, 251, 247);
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.adv-hero {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adv-overlay {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 70px;
+  border-radius: 30px;
+}
+
+.adv-overlay h1 {
+  font-size: 65px;
+  font-weight: bold;
+  color: #00ff99;
+  text-shadow: 0 0 25px black;
+}
+
+.adv-overlay p {
+  font-size: 30px;
+  color: lightgray;
+}
+.adv-btn {
+  background: #00ff99;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.adv-btn:hover {
+  background: rgb(16, 9, 9);
+  transform: scale(1.08);
+}
+
+.adv-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #00ff99;
+}
+
+.adv-subtitle {
+  color: rgb(255, 251, 251);
+  font-size: 28px;
+}
+
+.adv-card {
+  height: 240px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 2px solid rgba(0,255,153,0.4);
+  transition: 0.4s;
+}
+
+.adv-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 25px #00ff99;
+}
+
+.trek { background-image: url("trekking.jpg"); }
+.diving { background-image: url("Scuba\ Dive.jpg"); }
+.safari { background-image: url("Wildlife\ Sanctuary.jpg"); }
+.camping { background-image: url("Hills\ Camping_.jpg"); }
+.waterfalls { background-image: url("Waterfall\ 💦🌊.jpg"); }
+.watersports { background-image: url("paraglasing.jpg"); }
+
+.adv-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.adv-form input,
+.adv-form select {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+}
+
+.adv-form button {
+  background: #00ff99;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.adv-form button:hover {
+  background: white;
+}
+
+
+.adv-footer {
+  background: black;
+  text-align: center;
+  padding: 15px;
+  color: gray;
+}
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 40px;
+  }
+
+  .nav-links li a {
+    font-size: 35px;
+  }
+
+  .adv-hero {
+    height: 450px;
+  }
+
+  .adv-overlay {
+    padding: 50px;
+  }
+
+  .adv-overlay h1 {
+    font-size: 50px;
+  }
+
+  .adv-overlay p {
+    font-size: 24px;
+  }
+
+  .adv-title {
+    font-size: 48px;
+  }
+
+  .adv-subtitle {
+    font-size: 22px;
+  }
+
+  .adv-card {
+    height: 200px;
+  }
+
+  .adv-form input,
+  .adv-form select {
+    padding: 10px;
+  }
+
+  .adv-form button {
+    padding: 10px;
+  }
+}

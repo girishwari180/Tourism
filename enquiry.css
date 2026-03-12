@@ -1,0 +1,104 @@
+
+body{
+height: 1000px;
+display:flex;
+justify-content:center;
+align-items:center;
+background: linear-gradient(135deg, #141e30, #243b55);
+}
+.navbar {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 60px;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color:rgb(25, 26, 20);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(248, 251, 247);
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.container{
+display:flex;
+gap:40px;
+}
+
+.contact-box{
+width:350px;
+padding:30px;
+background:white;
+border-radius:15px;
+box-shadow:0 20px 45px rgba(0,0,0,0.35);
+border-left:6px solid #D4AF37;
+}
+
+.contact-box h2{
+color:#0F2027;
+margin-bottom:20px;
+}
+
+.contact-box p{
+margin:12px 0;
+color:#333;
+font-size:16px;
+}
+
+/* Enquiry Box (Right) */
+.enquiry-box{
+width:350px;
+padding:30px;
+background:white;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.enquiry-box h2{
+color:#6a11cb;
+margin-bottom:20px;
+}
+
+/* Form Inputs */
+.enquiry-box input,
+.enquiry-box textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:15px;
+}
+
+.enquiry-box button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background: linear-gradient(135deg, #000000, #379dd4,black);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.enquiry-box button:hover{
+transform:scale(1.05);
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+.container{
+flex-direction:column;
+}
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andhra Pradesh - SouthScape</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="andhrapradesh.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="ap-hero">
+    <div class="ap-overlay text-center">
+      <h1>Andhra Pradesh</h1>
+      <p>Spiritual Trails • Heritage Temples • Sunrise Coast</p>
+      <a href="#booking" class="btn ap-btn mt-3">Plan Andhra Trip</a>
+    </div>
+  </header>
+
+
+  <!-- ✅ ABOUT ANDHRA -->
+  <section class="container text-center my-5">
+    <h2 class="ap-title">Discover Andhra Pradesh</h2>
+    <p class="ap-subtitle">
+      Andhra Pradesh is known for its divine temples, rich culture,
+      scenic beaches, and spiritual destinations like Tirupati.
+    </p>
+  </section>
+
+
+  <!-- ✅ TOP ATTRACTIONS -->
+  <section class="container my-5">
+    <h2 class="ap-title text-center">Top Spiritual & Tourist Places</h2>
+
+    <div class="row g-4 mt-4">
+
+      <div class="col-md-4">
+        <div class="ap-card tirupati">
+          <h4>Tirupati</h4>
+          <p>Lord Venkateswara Temple</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="ap-card amaravati">
+          <h4>Amaravati</h4>
+          <p>Buddhist Heritage</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="ap-card vizag">
+          <h4>Visakhapatnam</h4>
+          <p>Beach City of AP</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="ap-card srisailam">
+          <h4>Srisailam</h4>
+          <p>Jyotirlinga Temple</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="ap-card lepakshi">
+          <h4>Lepakshi</h4>
+          <p>Hanging Pillar Temple</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="ap-card araku">
+          <h4>Araku Valley</h4>
+          <p>Hill Beauty & Coffee</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ✅ PILGRIMAGE HIGHLIGHTS -->
+  <section class="ap-pilgrimage text-center">
+    <h2>Spiritual Highlights</h2>
+    <p>
+      Andhra Pradesh is a divine land of temples and pilgrimage routes.
+      Millions visit Tirumala Tirupati every year.
+    </p>
+
+    <div class="pilgrim-box">
+      🕉 Must Visit: <span>Tirumala Tirupati Devasthanam</span>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="ap-title text-center">Tour Packages</h2>
+
+    <table class="table table-hover text-center mt-4">
+      <thead class="table-dark">
+        <tr>
+          <th>Package</th>
+          <th>Days</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tirupati Darshan Tour</td>
+          <td>2 Days</td>
+          <td>₹7,000</td>
+        </tr>
+        <tr>
+          <td>Spiritual Andhra Trail</td>
+          <td>5 Days</td>
+          <td>₹15,000</td>
+        </tr>
+        <tr>
+          <td>Complete Andhra Experience</td>
+          <td>8 Days</td>
+          <td>₹25,000</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="booking" class="container my-5">
+    <h2 class="ap-title text-center">Book Your Andhra Trip</h2>
+
+    <form class="ap-form mt-4" onsubmit="bookTrip(event)">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+      <input type="date" id="date" required>
+
+      <select id="package" required>
+        <option value="">Select Package</option>
+        <option>Tirupati Darshan Tour</option>
+        <option>Spiritual Andhra Trail</option>
+        <option>Complete Andhra Experience</option>
+      </select>
+
+      <button type="submit">Book Now 🕉</button>
+    </form>
+  </section>
+
+
+  <!-- ✅ AUDIO DEVOTIONAL VIBE -->
+  <section class="container text-center my-5">
+    <h2 class="ap-title">Temple Devotional Vibe</h2>
+
+    <audio controls class="mt-3">
+      <source src="media/bhajan.mp3" type="audio/mp3">
+    </audio>
+  </section>
+
+  <section class="container text-center my-5">
+    <h2 class="ap-title">Explore Andhra Pradesh</h2>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7866191.810385729!2d75.46284225676061!3d15.70271673555938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAndhra%20Pradesh%20tourism!5e0!3m2!1sen!2sin!4v1771674937033!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer class="ap-footer">
+    <p>© 2026 SouthScape Tourism | Andhra Pradesh Spiritual Theme</p>
+  </footer>
+<script>
+
+function bookTrip(event)
+{
+event.preventDefault();
+
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var date = document.getElementById("date").value;
+var pack = document.getElementById("package").value;
+
+if(name == "")
+{
+alert("Please enter your name");
+return;
+}
+
+if(email.indexOf("@") == -1 || email.indexOf(".") == -1)
+{
+alert("Enter valid email");
+return;
+}
+
+if(date == "")
+{
+alert("Please select travel date");
+return;
+}
+
+if(pack == "")
+{
+alert("Please select a package");
+return;
+}
+
+localStorage.setItem("apName", name);
+localStorage.setItem("apEmail", email);
+localStorage.setItem("apDate", date);
+localStorage.setItem("apPackage", pack);
+
+alert("Andhra Trip Booked Successfully!");
+
+}
+
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

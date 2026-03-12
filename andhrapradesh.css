@@ -1,0 +1,143 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background:burlywood;
+  color: #222;
+}
+
+/* HERO */
+.ap-hero {
+  height: 50vh;
+  /* no-repeat center/cover;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ap-overlay {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 60px;
+  border-radius: 25px;
+}
+
+.ap-overlay h1 {
+  font-size: 65px;
+  font-weight: bold;
+  color: #b22222;
+}
+
+.ap-overlay p {
+  font-size: 20px;
+  color: #444;
+}
+
+/* BUTTON */
+.ap-btn {
+  background: #b22222;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.ap-btn:hover {
+  background: darkorange;
+  color: white;
+}
+
+/* TITLES */
+.ap-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #b22222;
+}
+
+.ap-subtitle {
+  color: rgb(241, 239, 239);
+  font-size: 28px;
+}
+
+/* ATTRACTION CARDS - Calm Spiritual Style */
+.ap-card {
+  height: 240px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 2px solid rgba(178,34,34,0.4);
+  transition: 0.4s;
+}
+
+.ap-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,140,0,0.6);
+}
+
+/* BACKGROUND IMAGES */
+.tirupati { background-image: url("tirupathi.png"); }
+.amaravati { background-image: url("amaravathi.png"); }
+.vizag { background-image: url("vizag.png"); }
+.srisailam { background-image: url("srisailam.png"); }
+.lepakshi { background-image: url("lepakshi.png"); }
+.araku { background-image: url("araku.png"); }
+ 
+.ap-pilgrimage {
+  background: linear-gradient(to right, #ffcc80, #fff3e0);
+  padding: 70px 20px;
+}
+
+.pilgrim-box {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  background: rgba(255,255,255,0.8);
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 30px;
+}
+
+.pilgrim-box span {
+  color: #b22222;
+}
+
+/* FORM */
+.ap-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ap-form input,
+.ap-form select {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid gray;
+}
+
+.ap-form button {
+  background: #b22222;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.ap-form button:hover {
+  background: darkorange;
+}
+
+/* FOOTER */
+.ap-footer {
+  background: #b22222;
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
