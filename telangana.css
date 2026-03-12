@@ -1,0 +1,142 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #0b0b14;
+  color: white;
+}
+.tg-hero {
+  height: 400px;
+  /*background: url("proj.images/tg.png") no-repeat center/cover;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tg-overlay {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 60px;
+  border-radius: 25px;
+}
+
+.tg-overlay h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 0 0 20px black;
+}
+
+.tg-overlay p {
+  font-size: 20px;
+  color: lightgray;
+}
+
+/* BUTTON */
+.tg-btn {
+  background: gold;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.tg-btn:hover {
+  background: crimson;
+  color: white;
+}
+
+/* TITLES */
+.tg-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: gold;
+}
+
+.tg-subtitle {
+  color: lightgray;
+  font-size: 18px;
+}
+
+/* ATTRACTION CARDS - Mughal Style */
+.tg-card {
+  height: 240px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 2px solid gold;
+  transition: 0.4s;
+}
+
+.tg-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px gold;
+}
+
+/* BACKGROUND IMAGES */
+.charminar { background-image: url("charminar.png"); }
+.golconda { background-image: url("golconda.png"); }
+.ramoji { background-image: url("ramoji\ film\ city.png"); }
+.birla { background-image: url("birla\ mandir.png"); }
+.warangal { background-image: url("warangal.png"); }
+.husain { background-image: url("hussian\ sagar.png"); }
+
+.tg-food {
+  background: linear-gradient(to right, crimson, black);
+  padding: 70px 20px;
+}
+
+.food-highlight {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  background: rgba(255,255,255,0.15);
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 30px;
+}
+
+.food-highlight span {
+  color: gold;
+}
+
+/* FORM */
+.tg-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tg-form input,
+.tg-form select {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+}
+
+.tg-form button {
+  background: gold;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tg-form button:hover {
+  background: crimson;
+  color: white;
+}
+
+/* FOOTER */
+.tg-footer {
+  background: black;
+  text-align: center;
+  padding: 15px;
+  color: gray;
+}

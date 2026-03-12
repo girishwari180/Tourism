@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telangana </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="telangana.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="tg-hero">
+    <div class="tg-overlay text-center">
+      <h1>Telangana</h1>
+      <p>Royal Nizam Heritage • Charminar Nights • Famous Biryani</p>
+      <a href="#booking" class="btn tg-btn mt-3">Plan Telangana Trip</a>
+    </div>
+  </header>
+  <section class="container text-center my-5">
+    <h2 class="tg-title">Discover Telangana</h2>
+    <p class="tg-subtitle">
+      Telangana is a land of royal palaces, historic forts, vibrant festivals,
+      and the world-famous Hyderabadi culture.
+    </p>
+  </section>
+  <section class="container my-5">
+    <h2 class="tg-title text-center">Top Attractions</h2>
+
+    <div class="row g-4 mt-4">
+
+      <div class="col-md-4">
+        <div class="tg-card charminar">
+          <h4>Charminar</h4>
+          <p>Icon of Hyderabad</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="tg-card golconda">
+          <h4>Golconda Fort</h4>
+          <p>Historic Royal Fortress</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="tg-card ramoji">
+          <h4>Ramoji Film City</h4>
+          <p>World’s Largest Film Studio</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="tg-card birla">
+          <h4>Birla Mandir</h4>
+          <p>Temple with City Views</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="tg-card warangal">
+          <h4>Warangal</h4>
+          <p>Kakatiya Heritage</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="tg-card husain">
+          <h4>Hussain Sagar</h4>
+          <p>Lake & Buddha Statue</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="tg-food text-center">
+    <h2>Hyderabadi Culture & Cuisine</h2>
+    <p>
+      Telangana is famous for its Nawabi traditions, pearls, festivals,
+      and of course the legendary Hyderabadi Biryani.
+    </p>
+
+    <div class="food-highlight">
+      🍛 Must Try: <span>Hyderabadi Dum Biryani</span>
+    </div>
+  </section>
+  <section class="container my-5">
+    <h2 class="tg-title text-center">Tour Packages</h2>
+
+    <table class="table table-bordered table-hover text-center mt-4">
+      <thead class="table-dark">
+        <tr>
+          <th>Package</th>
+          <th>Days</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hyderabad Heritage Tour</td>
+          <td>3 Days</td>
+          <td>₹9,000</td>
+        </tr>
+        <tr>
+          <td>Royal Forts & Lakes</td>
+          <td>5 Days</td>
+          <td>₹14,000</td>
+        </tr>
+        <tr>
+          <td>Telangana Grand Tour</td>
+          <td>7 Days</td>
+          <td>₹20,000</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="booking" class="container my-5">
+    <h2 class="tg-title text-center">Book Your Telangana Trip</h2>
+
+    <form class="tg-form mt-4">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="date" required>
+
+      <select required>
+        <option value="">Select Package</option>
+        <option>Hyderabad Heritage Tour</option>
+        <option>Royal Forts & Lakes</option>
+        <option>Telangana Grand Tour</option>
+      </select>
+
+      <button type="submit">Book Now 🏰</button>
+    </form>
+  </section>
+  <section class="container text-center my-5">
+    <h2 class="tg-title">Telangana Tourism Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/in3yBTvC_bs?si=PYUsjTTyOKrNWA4_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+  <section class="container text-center my-5">
+    <h2 class="tg-title">Explore Telangana Map</h2>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d971897.6194109513!2d78.93522407548471!3d17.909982407719998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTelangana%20tourism!5e0!3m2!1sen!2sin!4v1771671996158!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <footer class="tg-footer">
+    <p>© 2026 SouthScape Tourism | Telangana Royal Theme</p>
+  </footer>
+  <script>
+document.querySelector(".tg-form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  let name = this.querySelector('input[type="text"]').value;
+  let email = this.querySelector('input[type="email"]').value;
+  let date = this.querySelector('input[type="date"]').value;
+  let pkg = this.querySelector("select").value;
+
+  // validation cases
+  if(name.length < 3){
+    alert("Name must contain at least 3 letters");
+    return;
+  }
+
+  if(!email.includes("@gmail.com")){
+    alert("Email must contain @gmail.com");
+    return;
+  }
+
+  if(pkg === ""){
+    alert("Please select a package");
+    return;
+  }
+
+  let booking = {
+    name: name,
+    email: email,
+    date: date,
+    package: pkg,
+    state: "Telangana"
+  };
+
+  let bookings = JSON.parse(localStorage.getItem("telanganaBookings")) || [];
+
+  bookings.push(booking);
+
+  localStorage.setItem("telanganaBookings", JSON.stringify(bookings));
+
+  alert("Telangana trip booked successfully!");
+
+  this.reset();
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
